@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eLearningEmpire - Esqueci minha Senha</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS para estilização -->
+  <script src="script.js"></script> <!-- Arquivo JavaScript para a funcionalidade do pop-up -->
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpeg" alt="Logo eLearningEmpire">
+  </header>
+  
+  <main>
+    <h1>Esqueci minha Senha</h1>
+    <form>
+      <label for="email">Email cadastrado:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="button" onclick="resetPassword()">Redefinir Senha</button>
+    </form>
+  </main>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>Instruções de redefinição de senha enviadas para o seu email.</p>
+      <button onclick="redirectToLogin()">OK</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script> <!-- Arquivo JavaScript para a funcionalidade do pop-up -->
+
+  <footer>
+    <p>Aluno: Eduardo Orlando</p>
+    <p>Email: eduardo.barreraorlando@gmail.com</p>
+  </footer>
+  
+</body>
+</html>
